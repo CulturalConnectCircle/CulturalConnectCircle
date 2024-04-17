@@ -1,4 +1,4 @@
-import { getAllUsers, createUser, updateUser, deleteUser, uploadImage, getImages } from "../controllers/userController";
+import { getAllUsers, createUser, updateUser, deleteUser, uploadImage, getImages, loginUser } from "../controllers/userController";
 import multer from 'multer';
 
 export const routes = (app) => {
@@ -39,5 +39,8 @@ export const routes = (app) => {
 
     app.route('/user/getImages')
     .get(getImages);
+
+    app.route('/user/login')
+    .post(loginUser);
 
 }
