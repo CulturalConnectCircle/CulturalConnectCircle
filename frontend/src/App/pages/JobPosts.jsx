@@ -26,7 +26,7 @@ export default () => {
       
     return (
         <>
-            <NavigationBar name="Job Posts"/>
+            <NavigationBar name="UPCOMING EVENTS"/>
             <JobPost jobPosts={jobPosts} sx={{
                 marginTop: '50px',
             }}/>

@@ -5,7 +5,7 @@ import NavigationBar from "../components/NavBar/NavigationBar";
 export default () => {
     return (
         <>
-            <NavigationBar name="Contact"/>
+            <NavigationBar name="CONTACT US"/>
             <ContactForm/>
             <Footer/>
         </>

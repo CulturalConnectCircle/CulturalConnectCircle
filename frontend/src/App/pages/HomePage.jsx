@@ -15,7 +15,7 @@ export default () => {
     return (
         <>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            <NavigationBar name="Home"/>
+            <NavigationBar name="HOME"/>
             <HomeCard/>
             <Footer/>
         </>
