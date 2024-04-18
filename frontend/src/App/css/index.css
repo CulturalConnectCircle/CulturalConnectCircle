@@ -1,0 +1,265 @@
+body {
+    background-color: #4a366e;
+    color: #000;
+}
+
+.custom-rounded-button {
+    border-radius: 20px;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    background-color: #e19052;
+}
+
+h1.custom-heading {
+    color: #e19052;
+    font-size: 2rem;
+}
+
+h2.custom-subheading {
+    color: #e19052;
+    font-size: 1.5rem;
+}
+
+.text-start.text-left.mt-2 {
+    color: #e19052;
+}
+
+.sign-up-logo img {
+    max-width:100%;
+    max-height: 320px;
+    width: auto;
+    height: auto;
+}
+
+.sign-up-logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container.mt-8 {
+    margin-top: 65px;
+    margin-bottom: 50px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.offcanvas-title.text-decoration-underline {
+    color: red;
+}
+
+.text-start.mx-auto.text-center {
+    color: #e19052;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+/* Styles for the carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    font-size: 24px;
+}
+
+/* Styles for custom headings */
+.custom-heading {
+    font-size: 36px;
+    color: #000;
+}
+
+/* Styles for custom subheadings */
+.custom-subheading {
+    font-size: 24px;
+    color: #000;
+}
+
+/* Styles for custom rounded buttons */
+.custom-rounded-button {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+/*  */
+.custom-rounded-button:hover {
+    background-color: #fff;
+    color: #fff;
+}
+
+/* Styles for links within buttons */
+.custom-rounded-button a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Styles for the "Already have an account?" section */
+.text-start {
+    text-align: left;
+}
+
+.button-google-sign-in {
+    color: #00040a;
+    margin-right: 10px;
+
+}
+
+.button-apple-sign-in {
+    color: #000205;
+    margin-right: 15px;
+}
+
+header {
+    background-color: #e19052;
+}
+
+footer {
+    background-color: #e19052;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+
+/* Style for the enabled button */
+#submitButton:enabled {
+    background-color: #DC3535;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style for the disabled button */
+#submitButton:disabled {
+    background-color: gray;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 480px) {
+    .sign-up-logo {
+        display: none;
+    }
+    .sign-in-logo {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+      height: 68px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .about-me__info--para {
+      font-size: 18px;
+    }
+  
+    .language {
+      width: calc(100% / 3);
+    }
+  
+    .project__wrapper img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .experience {
+      padding: 0 12px;
+      width: 100%;
+    }
+  
+    .project__description--para {
+      font-size: 14px;
+    }
+  
+    .project__description {
+      left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .nav__link:not(:last-child) {
+      display: none;
+    }
+  
+    .nav {
+      max-width: 900px;
+    }
+  
+    .column {
+      width: calc(100% / 2);
+    }
+  
+    .experience {
+      width: calc(100% / 1);
+    }
+  
+    .gallery {
+      flex-direction: column;
+    }
+  
+    .project__wrapper {
+      border-radius: 0;
+    }
+  
+    .project__description {
+      padding: 0;
+      left: 0;
+      width: 100%;
+    }
+  
+    .project__description--para {
+      display: none;
+    }
+  
+    .project__description--links {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .project__description--title {
+      font-size: 32px;
+      line-height: 1;
+      text-align: center;
+    }
+  
+    .project__description--sub-title {
+      text-align: center;
+      margin: 12px 0;
+    }
+  
+    .gallery {
+      width: 100%;
+    }
+  }
+
+  .navbar-brand.jumbotron {
+    color: #fff;
+  }
