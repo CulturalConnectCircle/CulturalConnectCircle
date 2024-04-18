@@ -51,7 +51,7 @@ export default (props) => {
           width: `100%`,
         }}
       >
-        <Toolbar style={{ backgroundColor: '#57c7cb' }}>
+        <Toolbar style={{ backgroundColor: '#750606' }}>
           <IconButton
             size="large"
             edge="start"

@@ -12,11 +12,13 @@ export default function ContactForm() {
 
   return (
     <React.Fragment>
-      <Box alignItems="center" sx={{  flexGrow: 1, maxWidth: 752, backgroundColor:'#F3FFFF', marginTop: '50px' }}>
+      <Box alignItems="center" sx={{  flexGrow: 1, width: 1000, backgroundColor:'#fbf4e6', marginTop: '50px' }}>
         <br/>
-        <Typography variant='body1'>Do you have any questions? Please do not hesitate to contact us
-          directly. Our team will come back to you within a matter of hours to
-          help you.</Typography>
+        <Typography variant='body1'>Do you have any questions? 
+        <p>Please do not hesitate to contact us
+          directly.</p>
+        <p>Our team will come back to you within a matter of hours to
+          help you.</p></Typography>
         <form id="contact-form">
           <TextField
             label="Name"
@@ -25,8 +27,7 @@ export default function ContactForm() {
             placeholder='Enter your Name'
             color="primary"
             type="name"
-            sx={{mb: 3}}
-            fullWidth
+            sx={{mb: 3, width: '800px'}}
           />
           <TextField
             label="Email"
@@ -35,8 +36,7 @@ export default function ContactForm() {
             variant="outlined"
             color="primary"
             type="email"
-            sx={{mb: 3}}
-            fullWidth
+            sx={{mb: 3, width: '800px'}}
           />
           <TextField
             label="Subject"
@@ -44,24 +44,27 @@ export default function ContactForm() {
             color="primary"
             placeholder='Enter your Subject'
             type="email"
-            sx={{mb: 3}}
-            fullWidth
+            sx={{mb: 3, width: '800px'}}
           />
           <TextField
             label="Message"
             variant="outlined"
-            color="primary"
+            // color="primary"
+            style={{
+              borderRadius: 35,
+              backgroundColor: "fbf4e6"}}
             type="email"
-            sx={{mb: 3}}
+            sx={{mb: 3, width: '800px'}}
             multiline
             placeholder='Enter your Message'
             rows={4}
-            fullWidth
-          />
+          /> <br/>
           <Button 
             variant="outlined" 
-            style={{ color:'black', borderBlockColor: 'black' }}
-            onClick={() => handleClick()}
+            // style={{ color:'fbf4e6', borderBlockColor: '#db991f' }}
+            style={{
+              borderRadius: 35,
+              backgroundColor: "fbf4e6"}}
           >Send</Button>
         </form>
       </Box>

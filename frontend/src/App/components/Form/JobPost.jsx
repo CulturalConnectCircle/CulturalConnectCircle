@@ -25,7 +25,7 @@ export default ({jobPosts}) => {
             }}>
                 {
                     jobPosts && jobPosts.map((job) => (
-                        <Box sx={{  flexGrow: 1, maxWidth: 752, backgroundColor:'#F3FFFF' }}>
+                        <Box sx={{  flexGrow: 1, maxWidth: 752, backgroundColor:'#f7e7c8' }}>
                         <ListItem alignItems='flex-start' key={job._id}>
                             <ListItemAvatar>
                                 <Avatar>

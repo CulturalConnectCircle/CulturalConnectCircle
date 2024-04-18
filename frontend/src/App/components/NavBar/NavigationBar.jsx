@@ -51,7 +51,7 @@ export default (props) => {
           width: `100%`,
         }}
       >
-        <Toolbar style={{ backgroundColor: '#57c7cb' }}>
+        <Toolbar style={{ backgroundColor: '#750606' }}>
           <IconButton
             size="large"
             edge="start"
@@ -82,9 +82,9 @@ export default (props) => {
               >
                 <a href='/home'><MenuItem>Home</MenuItem></a>
                 <a href='/aboutus'><MenuItem>About Us</MenuItem></a>
-                <a href='/jobPosts'><MenuItem>Job Posts</MenuItem></a>
+                <a href='/jobPosts'><MenuItem>Upcoming Events</MenuItem></a>
                 <a href='/contact'><MenuItem>Contact</MenuItem></a>
-                <a href='/companyshowcase'><MenuItem>Company Showcase</MenuItem></a>
+                <a href='/companyshowcase'><MenuItem>Events</MenuItem></a>
               </Menu>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             {props.name}
