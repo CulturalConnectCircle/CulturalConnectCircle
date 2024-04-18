@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
-import hiring from '../../../assets/hiring.png';
+import hiring from '../../../assets/culturalpic.jpeg';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -16,22 +16,26 @@ export default function AboutCard({ personInfo }) {
         <Grid item xs={12} md={8}>
           <Typography variant='h4' sx={{ textAlign: 'left' }}>
             <strong>
-              Learn more about Jobify. The fastest and most affordable solution for posting your
-              jobs to hundreds of job boards.
+            Cultural Connect Circle: Bridging Cultures in the Corporate World
             </strong>
           </Typography>
           <Typography variant='body1' sx={{ textAlign: 'left', fontSize: 20 }} paragraph>
             
-              Betterteam was founded in February 2016 and publicly launched in July 2016. Since then
-              our clients have posted over 1 million jobs, received over 40 million candidates, and
-              made millions of new hires.
+          Discover Cultural Connect Circle – where diversity meets opportunity. 
+          Our platform is dedicated to promoting a multicultural workforce by 
+          connecting talented individuals from various cultural backgrounds with 
+          organizations that celebrate and harness diversity. Since our inception,
+          we've been committed to fostering an inclusive job market that values cultural
+          insights and perspectives.
+          <p><strong>OUR MISSION:</strong></p>
 
           </Typography>
           <Typography variant='body1' sx={{ textAlign: 'left', fontSize: 20 }} paragraph>  
 
-              We have now grown to 79 employees located in 12 different countries. The Betterteam
-              website receives over 30 million unique visitors per year making it one of the top HR
-              sites globally.
+          With a vibrant team from over a dozen countries, Cultural Connect Circle has made
+          it our mission to illuminate the strengths of cultural diversity in the professional
+          realm. We're not just about filling positions; we're about creating spaces where every 
+          culture can thrive and contribute to global business success.
           
           </Typography>
         </Grid>

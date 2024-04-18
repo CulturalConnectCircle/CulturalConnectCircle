@@ -1,16 +1,16 @@
 .card {
-    width: 100%;
-  }
-  
-  .card-header {
-    background-color: #57c7cb;
-    color: aliceblue;
-    font-weight: bold;
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  .Button {
-    border-color: #57c7cb;
-    background-color: #57c7cb;
-    color: aliceblue;
-  }
+.card-header {
+  background-color: #750606;
+  color: aliceblue;
+  font-weight: bold;
+  width: 100%;
+}
+
+.Button {
+  border-color: #750606;
+  background-color: #750606;
+  color: #750606;
+}

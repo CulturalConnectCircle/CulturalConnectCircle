@@ -13,37 +13,37 @@ export default () => {
     const personInfo = [
         {
           id: 1,
-          name: 'Jane Doe',
+          name: 'Vedantini',
           description: 'CEO',
           image: JaneDoe,
         },
         {
           id: 2,
-          name: 'John Doe',
+          name: 'Ankit',
           description: 'Recruiter Head',
           image: JohnDoe,
         },
         {
             id: 3,
-            name: 'John Scott',
+            name: 'Mohan',
             description: 'HR Manager',
             image: JohnScott,
           },
           {
             id: 4,
-            name: 'Jane Mary',
+            name: 'Krima',
             description: 'Software Engineer',
             image: JaneMary,
           },
           {
             id: 5,
-            name: 'John Jameson',
+            name: 'Vidit',
             description: 'Data Analyst',
             image: JohnJameson,
           },
           {
             id: 6,
-            name: 'Jane Jackson',
+            name: 'Arpita',
             description: 'Product Owner',
             image: JaneJackson,
           },
@@ -51,7 +51,7 @@ export default () => {
 
     return (
         <>
-            <NavigationBar name="About us"/>
+            <NavigationBar name="ABOUT US"/>
             <AboutCard personInfo={personInfo}/>
             <Footer/>
         </>

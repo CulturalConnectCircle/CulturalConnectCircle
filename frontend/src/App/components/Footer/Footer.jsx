@@ -5,15 +5,17 @@ export default () => {
         <Box 
             className="fixed-bottom"
             sx={{
-                bgcolor:  '#57c7cb',
-                width: 'auto',
+                bgcolor:'#750606',
+                width: 'autopx',
                 color: 'aliceblue',
+                height: '50px', 
+                pt: 2,
             }}
         >
             <Grid container justifyContent="center">
                 <Grid item xs={12} sm={6} md={4}>
                     <Typography align="center" variant="body1">
-                        © 2024 Jobify All Rights Reserved
+                        © 2024 Cultural Connect Circle
                     </Typography>
                 </Grid>
             </Grid>
