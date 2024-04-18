@@ -27,6 +27,7 @@ CulturalConnect Circle is a comprehensive platform designed to enhance cultural 
    cd path/to/frontend
 
 # Install dependencies:
+```bash
 npm ci
 
 # Start the development server:
