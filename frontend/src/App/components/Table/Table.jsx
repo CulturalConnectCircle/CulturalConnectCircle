@@ -18,7 +18,7 @@ export default ({ employees }) => {
   return (
     <Grid container justifyContent="center">
         <div style={{ overflowX: 'auto' }}>
-          <TableContainer component={Paper} sx={{ backgroundColor: '#F3FFFF' }}>
+          <TableContainer component={Paper} sx={{ backgroundColor: '#fbf4e6' }}>
             <Table aria-label="simple table">
               <TableHead>
                 <TableRow>

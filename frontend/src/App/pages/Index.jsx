@@ -12,7 +12,12 @@ export default () => {
     let navigate = useNavigate();
 
     const navigateToLogin = () =>  {
-        navigate("/");
+        navigate("/login");
+        window.location.reload();
+    }
+
+    const navigateToRegister = () =>  {
+        navigate("/register");
         window.location.reload();
     }
 
@@ -36,7 +41,7 @@ export default () => {
         </div>
         <hr/>
         <div className="d-grid gap-3 col-9 mx-auto my-4">
-            <button className="btn btn-light custom-rounded-button" type="button" ><a className="link-underline">Create an account</a></button>
+            <button className="btn btn-light custom-rounded-button" type="button" onClick={navigateToRegister} ><a className="link-underline">Create an account</a></button>
             <p className="text-start text-left mt-2">
                 By signing up, you agree to the <a className="link-light link-offset-2 link-underline link-underline-opacity-50" href="#" data-bs-toggle="offcanvas" data-bs-target="#termsOfServiceOffcanvas">Terms of Service</a>
                 and <a className="link-light link-offset-2 link-underline link-underline-opacity-50" href="#" data-bs-toggle="offcanvas" data-bs-target="#privacyPolicyOffcanvas">Privacy Policy</a>, including Cookie Use.

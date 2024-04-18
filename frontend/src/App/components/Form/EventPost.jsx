@@ -25,7 +25,7 @@ export default ({eventPosts}) => {
             }}>
                 {
                     eventPosts && eventPosts.map((event) => (
-                        <Box sx={{  flexGrow: 1, maxWidth: 752, backgroundColor:'#f7e7c8' }}>
+                        <Box sx={{  flexGrow: 1, maxWidth: 752, backgroundColor:'#fbf4e6' }}>
                         <ListItem alignItems='flex-start' key={event._id}>
                             <ListItemAvatar>
                                 <Avatar>

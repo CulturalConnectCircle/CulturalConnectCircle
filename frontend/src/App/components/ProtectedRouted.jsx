@@ -8,8 +8,8 @@ export default ({allowedRoles}) => {
     return (isAuthenticated? (
         allowedRoles.find((role) => role === userType) ? 
             <Outlet/> : 
-            <Navigate to='/'/>
+            <Navigate to='/login'/>
         ) :
-        <Navigate to='/'/>
+        <Navigate to='/login'/>
     );
 }
