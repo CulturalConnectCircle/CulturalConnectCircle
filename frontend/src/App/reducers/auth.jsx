@@ -1,4 +1,6 @@
 import {
+    REGISTER_SUCCESS,
+    REGISTER_FAIL,
     LOGIN_SUCCESS,
     LOGIN_FAIL,
     LOGOUT,
@@ -35,6 +37,16 @@ import {
           isLoggedIn: false,
           token: null,
           type: null,
+        };
+      case REGISTER_SUCCESS: 
+        return {
+          ...state,
+          isLoggedIn: false,
+        };
+      case REGISTER_FAIL: 
+        return {
+          ...state,
+          isLoggedIn: false,
         };
       default:
         return state;

@@ -9,7 +9,7 @@ export default () => {
     const { token: token } = useSelector((state) => state.auth);
 
     if (!token) {
-        return <Navigate to="/" />;
+        return <Navigate to="/login" />;
     }
 
     return (

@@ -40,7 +40,7 @@ export default (props) => {
       });
   };
   if(!isLoggedIn) {
-    return <Navigate to="/"/>;
+    return <Navigate to="/login"/>;
   }
 
   return (
