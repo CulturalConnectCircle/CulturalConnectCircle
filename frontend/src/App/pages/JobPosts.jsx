@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Footer from "../components/Footer/Footer";
-import JobPost from "../components/Form/JobPost";
+import EventPost from "../components/Form/EventPost";
 import NavigationBar from "../components/NavBar/NavigationBar";
 import * as React from 'react';
 import axios from "axios";
@@ -8,26 +8,26 @@ import { useEffect } from "react";
 
 export default () => {
 
-    const [jobPosts, setJobPosts] = useState([]);
+    const [eventPosts, setEventPosts] = useState([]);
 
-    const getJobPosts = async () => {
+    const getEventPosts = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/get/jobs');
-            setJobPosts(response.data);
-            console.log(jobPosts);
+            const response = await axios.get('http://localhost:3000/get/events');
+            setEventPosts(response.data);
+            console.log(eventPosts);
         } catch ( error ) {
             console.log(error);
         }
     }
 
     useEffect(() => {
-        getJobPosts();
+        getEventPosts();
     }, []);
       
     return (
         <>
-            <NavigationBar name="Job Posts"/>
-            <JobPost jobPosts={jobPosts} sx={{
+            <NavigationBar name="Upcoming Events"/>
+            <EventPost eventPosts={eventPosts} sx={{
                 marginTop: '50px',
             }}/>
             <Footer/>

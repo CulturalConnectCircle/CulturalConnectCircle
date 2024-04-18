@@ -8,25 +8,25 @@ import { Box } from '@mui/material';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import axios from 'axios';
 
-export default ({jobPosts}) => {
+export default ({eventPosts}) => {
 
-    const deleteJob = async (companyName, jobTitle) => {
+    const deleteEvent = async (name) => {
         
-        console.log("console stuff",companyName, jobTitle);
-        const response = await axios.delete('http://localhost:3000/delete/jobs', {data :{companyname: companyName, jobtitle: jobTitle}})
+        console.log("console stuff",name);
+        const response = await axios.delete('http://localhost:3000/delete/events', {data :{name: name}})
         console.log(response);
     }
 
     return (
         <div>
-        {console.log(jobPosts)}
+        {console.log(eventPosts)}
             <List sx={{
                 marginTop: '50px',
             }}>
                 {
-                    jobPosts && jobPosts.map((job) => (
+                    eventPosts && eventPosts.map((event) => (
                         <Box sx={{  flexGrow: 1, maxWidth: 752, backgroundColor:'#f7e7c8' }}>
-                        <ListItem alignItems='flex-start' key={job._id}>
+                        <ListItem alignItems='flex-start' key={event._id}>
                             <ListItemAvatar>
                                 <Avatar>
                                     <WorkIcon/>
@@ -34,18 +34,17 @@ export default ({jobPosts}) => {
                             </ListItemAvatar>
                             <ListItemText
                                 primary={
-                                    <Typography variant='h4' gutterBottom>{job.companyname}</Typography>
+                                    <Typography variant='h4' gutterBottom>{event.name}</Typography>
                                 }
                                 secondary={
                                     <React.Fragment>
-                                        <Typography variant='body1' gutterBottom>Job Title: {job.jobtitle}</Typography>
-                                        <Typography variant='body1' gutterBottom>Description: {job.description}</Typography>
-                                        <Typography variant='body1' gutterBottom>Salary: {job.salary}</Typography>
-                                        <Typography variant='caption' gutterBottom>{job.lastUpdated}</Typography>
+                                        <Typography variant='body1' gutterBottom>Venue: {event.venue}</Typography>
+                                        <Typography variant='body1' gutterBottom>Date: {event.date}</Typography>
+                                        <Typography variant='body1' gutterBottom>Time: {event.time}</Typography>
                                     </React.Fragment>
                                 }
                             />
-                            <ListItemAvatar onClick={() => deleteJob(job.companyname, job.jobtitle)}>
+                            <ListItemAvatar onClick={() => deleteEvent(event.name)}>
                                 <Avatar>
                                     <DeleteOutlinedIcon />
                                 </Avatar>

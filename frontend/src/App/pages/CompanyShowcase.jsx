@@ -5,7 +5,7 @@ import RenderImage from "../components/List/RenderImage";
 export default () => {
     return (
         <>
-            <NavigationBar name="Company Showcase"/>
+            <NavigationBar name="Photo Gallery"/>
             <RenderImage/>
             <Footer/>
         </>

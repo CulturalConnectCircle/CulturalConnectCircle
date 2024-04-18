@@ -5,7 +5,6 @@ import HomePage from './App/pages/HomePage';
 import ProtectedRouted from './App/components/ProtectedRouted';
 import AboutUs from './App/pages/AboutUs';
 import CompanyShowcase from './App/pages/CompanyShowcase';
-import JobListings from './App/pages/JobListings';
 import Contact from './App/pages/Contact';
 import Employees from './App/pages/Employees';
 import AddJobPosts from './App/pages/AddJobPosts';
@@ -26,7 +25,6 @@ function App() {
                 <Route exact path='/home' element={<HomePage/>}/>
                 <Route exact path='/aboutus' element={<AboutUs/>}/>
                 <Route exact path='/companyshowcase' element={<CompanyShowcase/>}/>
-                <Route exact path='/joblistings' element={<JobListings/>}/>
                 <Route exact path='/contact' element={<Contact/>}/>
                 <Route exact path='/jobPosts' element={<JobPosts/>}/>
               </Route>
