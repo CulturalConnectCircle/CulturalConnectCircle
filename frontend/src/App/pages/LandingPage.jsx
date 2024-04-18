@@ -1,64 +1,47 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from '../components/Footer/Footer.jsx';
+import flashmob from '../../assets/flashmob.jpeg';
+import marathon from '../../assets/marathon.jpeg';
+import cdrive from '../../assets/CDrive.jpeg';
+import ccc from '../../assets/ccc.jpeg';
 
 function App() {
     return (
         <>
 
                 {/* Navbar */}
-                <nav className="navbar navbar-expand-lg navbar-light px-3" style={{backgroundColor:"#e19052"}}>
-                    <div className="container-fluid">
-                        <a className="navbar-brand fw-bold" href="index.html">CCC</a>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#about-us">About Us</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Search Events</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Announcements</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                            <a href="landingpage.html" className="btn btn-outline-dark">Login</a>
-                        </div>
-                    </div>
-                </nav>
+    <nav className="navbar navbar-expand-lg navbar-light px-3" style={{ backgroundColor: "#750606" }}>
+    <div className="container-fluid">
+        <a className="navbar-brand fw-bold" href="index.html" style={{ color: "white" }}>CCC</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                    <a className="nav-link active" aria-current="page" href="index.html" style={{ color: "white" }}>Home</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#about-us" style={{ color: "white" }}>About Us</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#" style={{ color: "white" }}>Search Events</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#" style={{ color: "white" }}>Announcements</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#" style={{ color: "white" }}>Contact</a>
+                </li>
+            </ul>
+            <a href="landingpage.html" className="btn btn-outline-dark" style={{ backgroundColor: "#fbf4e6", color: "#750606" }}>Login</a>
+        </div>
+    </div>
+</nav>
 
-                {/* Search Form */}
-                <div className="container my-5 px-md-4">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <h1 className="text-center">Connect with Your Cultural Heritage</h1>
-                            <div className="container  mb-5 px-md-4">
-                                <form id="search-form" action="#" method="post" noValidate="noValidate">
-                                    <div className="row">
-                                        <div className="col-lg-5 col-md-5 col-sm-12 p-0">
-                                            <input type="text" className="form-control search-slt" placeholder="Interest"/>
-                                        </div>
-                                        <div className="col-lg-5 col-md-5 col-sm-12 p-0">
-                                            <input type="text" className="form-control search-slt" placeholder="Genre"/>
-                                        </div>
-                                        <div className="col-lg-2 col-md-2 col-sm-12 p-0">
-                                            <button id="search" type="button" className="form-control btn btn-outline-dark">Search</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
                 {/* Description */}
                 <div className="container my-5 px-md-4">
@@ -67,7 +50,7 @@ function App() {
                             <h1 className="text-center">Welcome to the Cultural Connect Circle</h1>
                             <p className="fs-5 my-4">CulturalConnectCircle is your portal to a richer cultural journey within Northeastern university. Engage, explore, and contribute to the cultural tapestry of campus life through our platform. Stay in tune with the diverse cultural landscape of our university community! Uncover and share cultural events, traditions, and everyday cultural experiences with peers, enriching the campus atmosphere with a mosaic of global cultures.</p>
                             <div className="d-flex justify-content-center">
-                                <img src="images/logo.jpg" className="img-fluid mt-4 rounded" style={{maxWidth: "800px", height: "auto"}}  alt="CCC Image"/>
+                                <img src={ccc} className="img-fluid mt-4 rounded" style={{maxWidth: "800px", height: "auto"}}  alt="sudo Image"/>
                             </div>
                         </div>
                     </div>
@@ -133,121 +116,40 @@ function App() {
 
     
     <div className="container my-5">
-        <div className="col-lg-12">
-            <h1 className="text-center">Upcoming Events</h1>
+    <div className="row">
+        <div className="col-lg-12 text-center">
+            <h1 className="display-4 mb-4">Flashmob</h1>
         </div>
-        <div className="companies">
-            <div className="company rounded">
-                <div className="row">
-                    <div className="col-md-2 col-sm-2 text-center">
-                        <div className="company-logo">
-                            <img src="images/dance.jpg" className="img-responsive" alt=""/>
-                        </div>
+    </div>
+    <div className="row justify-content-center">
+        <div className="col-md-10">
+            <div className="card mb-4">
+                <div className="row g-0">
+                    <div className="col-md-4 d-flex align-items-center justify-content-center">
+                        <img src={flashmob} className="img-fluid rounded-start" alt="Dance Event"/>
                     </div>
-                    <div className="col-md-10 col-sm-10">
-                        <div className="company-content">
-                            <h3>Flashmob<span className="full-time">Flashmob</span></h3>
-                            <div className="row">
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-briefcase"></i>Dance</p>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            <h5 className="card-title mb-3">Event Details</h5>
+                            <p className="card-text mb-3">Join us for the Flashmob event and experience the excitement of spontaneous dance performances!</p>
+                            <div className="row mb-3">
+                                <div className="col-md-6">
+                                    <p><i className="fa fa-map-marker me-2"></i> Curry Center, Ground Floor, Northeastern University, Boston</p>
+                                    <p><i className="fa fa-calendar-days me-2"></i> Posted: 2 days ago</p>
                                 </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-map-marker
-                                    "></i>Curry Center, Ground Floor, Northeastern University, Boston</p>
-                                </div>
-                                <div className="col-md-4 col-sm-4">
+                                <div className="col-md-6 d-flex align-items-center justify-content-end">
                                     <a href="#" className="btn btn-outline-dark">Register Now</a>
                                 </div>
                             </div>
-
                             <div className="row">
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-calendar-days"></i>Posted: 2 days ago</p>
+                                <div className="col-md-4">
+                                    <p><i className="fa fa-briefcase me-2"></i> Dance</p>
                                 </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-user"></i>Applicants: 300+</p>
+                                <div className="col-md-4">
+                                    <p><i className="fa fa-user me-2"></i> Applicants: 300+</p>
                                 </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-money-bill"></i>Certificate</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="company rounded">
-                <div className="row">
-                    <div className="col-md-2 col-sm-2 text-center">
-                        <div className="company-logo">
-                            <img src="images/Marathon.jpg" className="img-responsive" alt=""/>
-                        </div>
-                    </div>
-                    <div className="col-md-10 col-sm-10">
-                        <div className="company-content">
-                            <h3>Marathon<span className="full-time">Marathon</span></h3>
-                            <div className="row">
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-briefcase"></i>Sports</p>
-                                </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-map-marker
-                                    "></i>07th Avenue, Boston, MA, United States</p>
-                                </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <a href="#" className="btn btn-outline-dark">Register Now</a>
-                                </div>
-                            </div>
-
-                            <div className="row">
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-calendar-days"></i>Posted: 4 days ago</p>
-                                </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-user"></i>Applicants: 400+</p>
-                                </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-money-bill"></i>Medals for first 5 and certificate for all</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="company rounded">
-                <div className="row">
-                    <div className="col-md-2 col-sm-2 text-center">
-                        <div className="company-logo">
-                            <img src="images/CDrive.jpg" className="img-responsive" alt=""/>
-                        </div>
-                    </div>
-                    <div className="col-md-10 col-sm-10">
-                        <div className="company-content">
-                            <h3>Cleanliness Drive<span className="full-time">Cleanliness Drive</span></h3>
-                            <div className="row">
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-briefcase"></i>Environment</p>
-                                </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-map-marker
-                                    "></i>Cabot , Boston, MA, United States</p>
-                                </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-money-bill"></i>$22,000-$50,000</p>
-                                    <a href="#" className="btn btn-outline-dark"> Register Now</a>
-                                </div>
-                            </div>
-
-                            <div className="row">
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-calendar-days"></i>Posted: 2 days ago</p>
-                                </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-user"></i>Applicants: 50+</p>
-                                </div>
-                                <div className="col-md-4 col-sm-4">
-                                    <p><i className="fa fa-money-bill"></i>Certificate</p>
+                                <div className="col-md-4">
+                                    <p><i className="fa fa-money-bill me-2"></i> Certificate</p>
                                 </div>
                             </div>
                         </div>
@@ -256,6 +158,104 @@ function App() {
             </div>
         </div>
     </div>
+</div>
+
+
+
+<div className="container my-5">
+    <div className="row">
+        <div className="col-lg-12 text-center">
+            <h1 className="display-4 mb-4">Marathon</h1>
+        </div>
+    </div>
+    <div className="row justify-content-center">
+        <div className="col-md-10">
+            <div className="card mb-4">
+                <div className="row g-0">
+                    <div className="col-md-4 d-flex align-items-center justify-content-center">
+                        <img src={marathon} className="img-fluid rounded-start" alt="Marathon Event"/>
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            <h5 className="card-title mb-3">Event Details</h5>
+                            <p className="card-text mb-3">Participate in the Marathon event and challenge yourself to achieve new heights in sports!</p>
+                            <div className="row mb-3">
+                                <div className="col-md-6">
+                                    <p><i className="fa fa-map-marker me-2"></i> 07th Avenue, Boston, MA, United States</p>
+                                    <p><i className="fa fa-calendar-days me-2"></i> Posted: 4 days ago</p>
+                                </div>
+                                <div className="col-md-6 d-flex align-items-center justify-content-end">
+                                    <a href="#" className="btn btn-outline-dark">Register Now</a>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <p><i className="fa fa-briefcase me-2"></i> Sports</p>
+                                </div>
+                                <div className="col-md-4">
+                                    <p><i className="fa fa-user me-2"></i> Applicants: 400+</p>
+                                </div>
+                                <div className="col-md-4">
+                                    <p><i className="fa fa-money-bill me-2"></i> Medals for first 5 and certificate for all</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div className="container my-5">
+    <div className="row">
+        <div className="col-lg-12 text-center">
+            <h1 className="display-4 mb-4">Cleanliness Drive</h1>
+        </div>
+    </div>
+    <div className="row justify-content-center">
+        <div className="col-md-10">
+            <div className="card mb-4">
+                <div className="row g-0">
+                    <div className="col-md-4 d-flex align-items-center justify-content-center">
+                        <img src={cdrive} className="img-fluid rounded-start" alt="Cleanliness Drive Event"/>
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            <h5 className="card-title mb-3">Event Details</h5>
+                            <p className="card-text mb-3">Join us for the Cleanliness Drive event and contribute to making our environment cleaner and greener!</p>
+                            <div className="row mb-3">
+                                <div className="col-md-6">
+                                    <p><i className="fa fa-map-marker me-2"></i> Cabot, Boston, MA, United States</p>
+                                    <p><i className="fa fa-calendar-days me-2"></i> Posted: 2 days ago</p>
+                                </div>
+                                <div className="col-md-6 d-flex align-items-center justify-content-end">
+                                    <p><i className="fa fa-money-bill me-2"></i> $22,000-$50,000</p>
+                                    <a href="#" className="btn btn-outline-dark ms-2">Register Now</a>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <p><i className="fa fa-briefcase me-2"></i> Environment</p>
+                                </div>
+                                <div className="col-md-4">
+                                    <p><i className="fa fa-user me-2"></i> Applicants: 50+</p>
+                                </div>
+                                <div className="col-md-4">
+                                    <p><i className="fa fa-money-bill me-2"></i> Certificate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
     <div className="container my-5">
@@ -316,7 +316,9 @@ function App() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+
     </div>
+    <Footer/>
 
 </>
         );
