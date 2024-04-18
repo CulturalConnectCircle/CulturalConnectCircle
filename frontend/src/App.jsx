@@ -1,33 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Login from './App/pages/Login'
+import { Routes, Route } from "react-router-dom";
+import HomePage from './App/pages/HomePage';
+import ProtectedRouted from './App/components/ProtectedRouted';
+import AboutUs from './App/pages/AboutUs';
+import CompanyShowcase from './App/pages/CompanyShowcase';
+import JobListings from './App/pages/JobListings';
+import Contact from './App/pages/Contact';
+import Employees from './App/pages/Employees';
+import AddJobPosts from './App/pages/AddJobPosts';
+import JobPosts from './App/pages/JobPosts';
+import LandingPage from './App/pages/LandingPage';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const user = localStorage.getItem("token");
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <Routes>
+              <Route exact path="/" element={<Login/>} />
+              <Route exact path="/landingPage" element={<LandingPage/>} />
+              <Route element={<ProtectedRouted allowedRoles={["employee"]}/>}>
+                <Route exact path='/home' element={<HomePage/>}/>
+                <Route exact path='/aboutus' element={<AboutUs/>}/>
+                <Route exact path='/companyshowcase' element={<CompanyShowcase/>}/>
+                <Route exact path='/joblistings' element={<JobListings/>}/>
+                <Route exact path='/contact' element={<Contact/>}/>
+                <Route exact path='/jobPosts' element={<JobPosts/>}/>
+              </Route>
+              <Route element={<ProtectedRouted allowedRoles={["admin"]}/>}>
+                <Route exact path='/employees' element={<Employees/>}/>
+                <Route exact path='/addjob' element={<AddJobPosts/>}/>
+              </Route>
+            </Routes>
     </>
   )
 }
