@@ -1,4 +1,5 @@
 import { getAllUsers, createUser, updateUser, deleteUser, uploadImage, getImages, loginUser } from "../controllers/userController";
+import { createEvent, getEvents, deleteEvents } from "../controllers/eventsController"
 import multer from 'multer';
 
 export const routes = (app) => {
@@ -42,5 +43,14 @@ export const routes = (app) => {
 
     app.route('/user/login')
     .post(loginUser);
+
+    app.route('/create/event')
+    .post(createEvent);
+
+    app.route('/get/events')
+    .get(getEvents);
+
+    app.route('/delete/event')
+    .delete(deleteEvents);
 
 }
