@@ -3,6 +3,10 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/index.css';
 import { Navigate, useNavigate } from 'react-router-dom';
+import holi from '../../assets/holi.jpeg';
+import neu from '../../assets/neu.jpeg';
+import india from '../../assets/india.jpeg';
+import dance from '../../assets/dance.jpeg';
 
 export default () => {
     let navigate = useNavigate();
@@ -93,16 +97,16 @@ export default () => {
         <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src="images/holi.jpg" className="d-block w-100" alt="Cultural Connect Circle"/>
+                <img src={holi} className="d-block w-100" alt="Cultural Connect Circle"/>
               </div>
               <div className="carousel-item">
-                <img src="images/neu.jpg" className="d-block w-100" alt="Audi Image"/>
+                <img src={neu} className="d-block w-100" alt="Audi Image"/>
               </div>
               <div className="carousel-item">
-                <img src="images/india.jpg" className="d-block w-100" alt="Fall Fest Image"/>
+                <img src={india} className="d-block w-100" alt="Fall Fest Image"/>
               </div>
               <div className="carousel-item">
-                <img src="images/dance.jpg" className="d-block w-100" alt="Neu Fest Image"/>
+                <img src={"assets/dance.jpeg"} className="d-block w-100" alt="Neu Fest Image"/>
               </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
