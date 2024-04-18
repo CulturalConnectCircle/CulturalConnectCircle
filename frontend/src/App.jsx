@@ -10,7 +10,6 @@ import Contact from './App/pages/Contact';
 import Employees from './App/pages/Employees';
 import AddJobPosts from './App/pages/AddJobPosts';
 import JobPosts from './App/pages/JobPosts';
-import LandingPage from './App/pages/LandingPage';
 
 function App() {
 
@@ -21,7 +20,6 @@ function App() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <Routes>
               <Route exact path="/" element={<Login/>} />
-              <Route exact path="/landingPage" element={<LandingPage/>} />
               <Route element={<ProtectedRouted allowedRoles={["employee"]}/>}>
                 <Route exact path='/home' element={<HomePage/>}/>
                 <Route exact path='/aboutus' element={<AboutUs/>}/>
