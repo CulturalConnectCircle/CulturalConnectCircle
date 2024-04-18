@@ -6,37 +6,29 @@ import flashmob from '../../assets/flashmob.jpeg';
 import marathon from '../../assets/marathon.jpeg';
 import cdrive from '../../assets/CDrive.jpeg';
 import ccc from '../../assets/ccc.jpeg';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function App() {
+
+    let navigate = useNavigate();
+
+    const navigateToIndexPage = () =>  {
+        navigate("/index");
+        window.location.reload();
+    }
+
     return (
         <>
 
                 {/* Navbar */}
-    <nav className="navbar navbar-expand-lg navbar-light px-3" style={{ backgroundColor: "#750606" }}>
+    <nav className="navbar navbar-expand-lg navbar-light px-3" style={{ backgroundColor: "#750606", width:'100%'}}>
     <div className="container-fluid">
         <a className="navbar-brand fw-bold" href="index.html" style={{ color: "white" }}>CCC</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="index.html" style={{ color: "white" }}>Home</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#about-us" style={{ color: "white" }}>About Us</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#" style={{ color: "white" }}>Search Events</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#" style={{ color: "white" }}>Announcements</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#" style={{ color: "white" }}>Contact</a>
-                </li>
-            </ul>
-            <a href="landingpage.html" className="btn btn-outline-dark" style={{ backgroundColor: "#fbf4e6", color: "#750606" }}>Login</a>
+            <a className="btn btn-outline-dark" style={{ backgroundColor: "#fbf4e6", color: "#750606", alignContent: "right" }} onClick={navigateToIndexPage}>Login</a>
         </div>
     </div>
 </nav>
